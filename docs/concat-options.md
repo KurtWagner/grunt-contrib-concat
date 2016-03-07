@@ -68,3 +68,9 @@ Type: `String`
 Default: `embed`
 
 Determines the type of source map that is generated. The default value, `embed`, places the content of the sources directly into the map. `link` will reference the original sources in the map as links. `inline` will store the entire map as a data URI in the destination file.
+
+## sourceMapRootPath
+Type: `String`
+Default: `undefined`
+
+The URL root from which all sources are relative.

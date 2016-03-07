@@ -83,7 +83,7 @@ exports.concat = {
     test.done();
   },
   sourcemap_options: function(test) {
-    test.expect(5);
+    test.expect(6);
 
     var actual = getNormalizedFile('tmp/sourcemap_inline');
     var expected = getNormalizedFile('test/expected/sourcemap_inline');
@@ -104,6 +104,10 @@ exports.concat = {
     actual = getNormalizedFile('tmp/sourcemap_css.css.map');
     expected = getNormalizedFile('test/expected/sourcemap_css.css.map');
     test.equal(actual, expected, 'should output the css map.');
+
+    actual = getNormalizedFile('tmp/sourcemap_js_root_path.js.map');
+    expected = getNormalizedFile('test/expected/sourcemap_js_root_path.js.map');
+    test.equal(actual, expected, 'should output the js map with root path.');
 
     test.done();
   }

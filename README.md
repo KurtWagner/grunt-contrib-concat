@@ -97,6 +97,12 @@ Default: `embed`
 
 Determines the type of source map that is generated. The default value, `embed`, places the content of the sources directly into the map. `link` will reference the original sources in the map as links. `inline` will store the entire map as a data URI in the destination file.
 
+#### sourceMapRootPath
+Type: `String`
+Default: `undefined`
+
+The URL root from which all sources are relative.
+
 ### Usage Examples
 
 #### Concatenating with a custom separator
@@ -297,4 +303,4 @@ grunt.initConfig({
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Sat Feb 20 2016 19:54:39.*
+*This file was generated on Tue Mar 08 2016 08:22:49.*

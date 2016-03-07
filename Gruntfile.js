@@ -139,6 +139,18 @@ module.exports = function(grunt) {
           ]
         }
       },
+      sourcemap_js_root_path: {
+        options: {
+          sourceMapRootPath: '/test/path',
+          sourceMap: true
+        },
+        files: {
+          'tmp/sourcemap_js_root_path.js': [
+            'test/fixtures/js1.js',
+            'test/fixtures/js2.js'
+          ]
+        }
+      },
       sourcemap_css: {
         options: {
           banner: '/*\nCSS Banner\n*/\n',
